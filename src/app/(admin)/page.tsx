@@ -6,7 +6,7 @@ import MonthlySalesChart from "@/components/ecommerce/MonthlySalesChart";
 import StatisticsChart from "@/components/ecommerce/StatisticsChart";
 import RecentOrders from "@/components/ecommerce/RecentOrders";
 import DemographicCard from "@/components/ecommerce/DemographicCard";
-
+import Card from "@/components/cards/Card";
 export const metadata: Metadata = {
   title:
     "Next.js E-commerce Dashboard | TailAdmin - Next.js Dashboard Template",
@@ -37,6 +37,10 @@ export default function Ecommerce() {
       <div className="col-span-12 xl:col-span-7">
         <RecentOrders />
       </div>
+
+      <div className="col-span-12 xl:col-span-18">
+        <Card title="curso c#" description="A continuación se presenta una selección de cursos diseñados para fortalecer tus habilidades técnicas y profesionales en distintas áreas de la informática y tecnología." image="images/product/product-06.jpg"/>
+      </div> 
     </div>
   );
 }
