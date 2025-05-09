@@ -4,7 +4,7 @@ import Header from "@/components/header/Header";
 import Carousel from "@/components/carousel/Carousel";
 import HeroText from "@/components/herotext/HeroText";    
 import React from "react";
-
+import Card from "@/components/cards/Card";
 export default function LandingPage() {
   return (
     <> 
@@ -21,7 +21,11 @@ export default function LandingPage() {
           <Carousel />
         </div>
       </div>
+      <div className="col-span-12 xl:col-span-18">
+        <Card title="curso c#" description="A continuación se presenta una selección de cursos diseñados para fortalecer tus habilidades técnicas y profesionales en distintas áreas de la informática y tecnología." image="images/product/product-05.jpg"/>
+      </div> 
     </section>
+
 
     </>
     
