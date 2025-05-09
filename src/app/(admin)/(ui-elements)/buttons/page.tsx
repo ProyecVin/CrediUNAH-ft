@@ -84,6 +84,11 @@ export default function Buttons() {
           </div>
         </ComponentCard>
       </div>
+      <Button className="bg-yellow-400 text-white px-4 py-2 rounded" size="sm" variant="primary">
+        Generar certificados
+      </Button>
     </div>
+
+
   );
 }
