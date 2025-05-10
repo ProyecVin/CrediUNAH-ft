@@ -5,6 +5,7 @@ import Carousel from "@/components/carousel/Carousel";
 import HeroText from "@/components/herotext/HeroText";    
 import React from "react";
 import Card from "@/components/cards/Card";
+import Footer from "@/components/footer/LandingFooter";
 
 
 const cursos = [
@@ -90,7 +91,7 @@ export default function LandingPage() {
       </div>
     </main>
       
-
+        
       
 
       
@@ -98,7 +99,7 @@ export default function LandingPage() {
 
 
     </section>
-
+    <Footer/>
 
     </>
     
