@@ -1,5 +1,3 @@
-
-    
 import Header from "@/components/header/Header";
 import Carousel from "@/components/carousel/Carousel";
 import HeroText from "@/components/herotext/HeroText";    
@@ -80,6 +78,14 @@ export default function LandingPage() {
         </div>
       </div>
 
+       {/* Imagen decorativa justo debajo del contenedor */}
+      <div className="w-full">
+        <img
+        src="/images/graficos_landing/1.svg"
+        alt="Decoración"
+        className="w-full h-auto" />
+      </div>
+
       <main className="container mx-auto py-12 px-4">
       <h1 className="text-4xl font-bold text-center mb-12">Nuestros Cursos</h1>
 
@@ -89,14 +95,6 @@ export default function LandingPage() {
         ))}
       </div>
     </main>
-      
-
-      
-
-      
-  
-
-
     </section>
 
 
@@ -105,11 +103,4 @@ export default function LandingPage() {
     
   );
 }
-
-
-
-
-// Datos de ejemplo para las tarjetas
-
-
 

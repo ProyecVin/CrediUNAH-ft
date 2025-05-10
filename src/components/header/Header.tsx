@@ -25,14 +25,14 @@ export default function Header() {
 
           {/* Call to Action - Desktop */}
           <div className="hidden md:block">
-            <Link href="#contact" className="bg-yellow-500 hover:bg-yellow-400 text-black py-2 px-6 rounded-full text-lg transition-all">
+            <Link href="#certificados" className="bg-yellow-400 hover:bg-yellow-500 text-silver font-semibold py-3 px-6 rounded-md shadow transition">
               Mis Certificados
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white focus:outline-none">
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-silver focus:outline-none">
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
