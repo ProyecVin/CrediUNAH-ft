@@ -1,11 +1,11 @@
-
-    
 import Header from "@/components/header/Header";
 import Carousel from "@/components/carousel/Carousel";
 import HeroText from "@/components/herotext/HeroText";    
 import React from "react";
 import Card from "@/components/cards/Card";
 import Footer from "@/components/footer/LandingFooter";
+import Insigne from "@/components/herotext/Insigne";
+import Texttwo from "@/components/herotext/Texttwo";
 
 
 const cursos = [
@@ -81,6 +81,28 @@ export default function LandingPage() {
         </div>
       </div>
 
+       {/* Imagen decorativa justo debajo del contenedor */}
+      <div className="w-full">
+        <img
+        src="/images/graficos_landing/1.svg"
+        alt="Decoración"
+        className="w-full h-auto" />
+      </div>
+
+      {/*aqui se muestra lo de ver tus certificados con la identidad*/}
+
+      <div className="container mx-auto py-12 px-4">
+        <Texttwo />
+      </div>
+
+      {/*Aqui se muestra la medalla*/}
+
+      <div className="container mx-auto py-12 px-4">
+        <Insigne />
+      </div>
+
+
+
       <main className="container mx-auto py-12 px-4">
       <h1 className="text-4xl font-bold text-center mb-12">Nuestros Cursos</h1>
 
@@ -90,14 +112,6 @@ export default function LandingPage() {
         ))}
       </div>
     </main>
-      
-        
-      
-
-      
-  
-
-
     </section>
     <Footer/>
 
@@ -106,6 +120,8 @@ export default function LandingPage() {
     
   );
 }
+
+
 
 
 
