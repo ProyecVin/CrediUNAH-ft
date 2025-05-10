@@ -1,22 +1,21 @@
 // components/Carousel.tsx
 
 import React from "react";
+import Image from "next/image";
 
 const ImageSlider: React.FC = () => {
   const images: string[] = [
-    "Abhirajk.webp",
-    "Abhirajk%20mykare.webp",
-    "Abhirajk2.webp",
-    "Abhirajk3.webp",
-    "Abhirajk4.webp",
+  "/images/carousel/carousel-01.png",
+  "/images/carousel/carousel-02.png",
+  "/images/carousel/carousel-03.png",
   ];
 
   return (
-    <div className="bg-gray-100 flex items-center justify-center min-h-screen">
-      <div className="w-full max-w-4xl mx-auto">
+    <div className="bg-gray-100 flex items-center justify-center py-10">
+      <div className="w-full max-w-2xl">
         <div
           id="slider"
-          className="flex overflow-x-scroll space-x-4 rounded-lg shadow-lg no-scrollbar"
+          className="flex overflow-x-scroll space-x-4 no-scrollbar px-4"
           style={{
             scrollSnapType: "x mandatory",
             WebkitOverflowScrolling: "touch",
@@ -25,15 +24,14 @@ const ImageSlider: React.FC = () => {
           {images.map((img, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-full md:w-3/4 lg:w-2/3 scroll-ml-6"
-              style={{ scrollSnapAlign: "center" }}
+              className="flex-shrink-0 w-full scroll-ml-6 snap-center"
             >
-              <img
-                src={`https://res.cloudinary.com/djv4xa6wu/image/upload/v173572216${
-                  5 - index
-                }/AbhirajK/${img}`}
-                alt={`Slider Image ${index + 1}`}
-                className="w-full h-[500px] object-cover rounded-lg"
+              <Image
+                src={img}
+                alt={`Slide ${index + 1}`}
+                width={800}
+                height={500}
+                className="rounded-2xl shadow-md object-cover"
               />
             </div>
           ))}
@@ -41,11 +39,10 @@ const ImageSlider: React.FC = () => {
 
         <div className="flex justify-center mt-4 space-x-2">
           {images.map((_, index) => (
-            <a
+            <span
               key={index}
-              href="#slider"
-              className="w-3 h-3 bg-gray-300 rounded-full"
-            ></a>
+              className="w-3 h-3 bg-green-300 rounded-full inline-block"
+            />
           ))}
         </div>
       </div>
