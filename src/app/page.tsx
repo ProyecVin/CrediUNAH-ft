@@ -3,7 +3,8 @@ import Carousel from "@/components/carousel/Carousel";
 import HeroText from "@/components/herotext/HeroText";    
 import React from "react";
 import Card from "@/components/cards/Card";
-
+import Insigne from "@/components/herotext/Insigne";
+import Texttwo from "@/components/herotext/Texttwo";
 
 const cursos = [
   {
@@ -85,6 +86,20 @@ export default function LandingPage() {
         alt="Decoración"
         className="w-full h-auto" />
       </div>
+
+      {/*aqui se muestra lo de ver tus certificados con la identidad*/}
+
+      <div className="container mx-auto py-12 px-4">
+        <Texttwo />
+      </div>
+
+      {/*Aqui se muestra la medalla*/}
+
+      <div className="container mx-auto py-12 px-4">
+        <Insigne />
+      </div>
+
+
 
       <main className="container mx-auto py-12 px-4">
       <h1 className="text-4xl font-bold text-center mb-12">Nuestros Cursos</h1>
