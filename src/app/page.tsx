@@ -7,7 +7,6 @@ import Footer from "@/components/footer/LandingFooter";
 import Insigne from "@/components/herotext/Insigne";
 import Texttwo from "@/components/herotext/Texttwo";
 
-
 const cursos = [
   {
     id: 1,
@@ -116,17 +115,5 @@ export default function LandingPage() {
     <Footer/>
 
     </>
-    
-    
   );
 }
-
-
-
-
-
-
-// Datos de ejemplo para las tarjetas
-
-
-
